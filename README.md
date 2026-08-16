@@ -18,6 +18,8 @@ Statyczna strona w HTML, stylowana Tailwind CSS, publikowana z GitHuba w Cloudfl
 | Historia | gotowa |
 | Skład + strony Cobaina, Novoselicia i Grohla | gotowe |
 | Dyskografia + Bleach, Nevermind, In Utero, MTV Unplugged | gotowe |
+| Teledyski (9 klipów) | gotowe |
+| Koncerty (85 nagrań live) | gotowe |
 | Ciekawostki | gotowe |
 | Linki i źródła | gotowe |
 | Galerie / zdjęcia | gotowe — 23 zdjęcia z Wikimedia Commons z podpisami licencji |
