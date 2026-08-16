@@ -7,6 +7,7 @@
     <title>Dave Grohl - Nirvana</title>
     <meta name="description" content="Dave Grohl, perkusista Nirvany od 1990 roku: droga przez zespół Scream, rola w nagraniach Nevermind i In Utero oraz Foo Fighters po 1994 roku.">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon.png">
     <link rel="preload" href="/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/anton-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -36,30 +37,36 @@
 
         <div class="flex flex-col gap-10 lg:flex-row">
             <div class="lg:w-1/3">
-                <div class="border border-nv-yellow/30 bg-nv-gray p-6 lg:sticky lg:top-28">
-                    <h2 class="font-display text-xl text-nv-yellow mb-4">Metryczka</h2>
-                    <dl class="space-y-3">
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Urodzony</dt>
-                            <dd class="text-lg text-gray-200 mt-1">14 stycznia 1969, Warren, Ohio</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">W zespole</dt>
-                            <dd class="text-lg text-gray-200 mt-1">1990–1994</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Instrument</dt>
-                            <dd class="text-lg text-gray-200 mt-1">Perkusja, chórki</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Wcześniej</dt>
-                            <dd class="text-lg text-gray-200 mt-1">Scream</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Później</dt>
-                            <dd class="text-lg text-gray-200 mt-1">Foo Fighters, Them Crooked Vultures, Probot</dd>
-                        </div>
-                    </dl>
+                <div class="lg:sticky lg:top-28">
+                    <div class="border-4 border-nv-yellow p-1">
+                        <img src="/img/sklad/dave-grohl.jpg" width="900" height="686" alt="Dave Grohl" fetchpriority="high" class="w-full grayscale">
+                    </div>
+                    <p class="mt-2 text-xs leading-snug text-gray-500">Fot. Tobby Holzinger / Agentur Spirit / <a href="https://commons.wikimedia.org/wiki/File:Dave_Grohl_1989.jpg" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener noreferrer license" class="underline transition hover:text-nv-yellow">CC BY-SA 3.0</a></p>
+                    <div class="mt-6 border border-nv-yellow/30 bg-nv-gray p-6">
+                        <h2 class="font-display text-xl text-nv-yellow mb-4">Metryczka</h2>
+                        <dl class="space-y-3">
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Urodzony</dt>
+                                <dd class="text-lg text-gray-200 mt-1">14 stycznia 1969, Warren, Ohio</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">W zespole</dt>
+                                <dd class="text-lg text-gray-200 mt-1">1990–1994</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Instrument</dt>
+                                <dd class="text-lg text-gray-200 mt-1">Perkusja, chórki</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Wcześniej</dt>
+                                <dd class="text-lg text-gray-200 mt-1">Scream</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Później</dt>
+                                <dd class="text-lg text-gray-200 mt-1">Foo Fighters, Them Crooked Vultures, Probot</dd>
+                            </div>
+                        </dl>
+                    </div>
                 </div>
             </div>
             <div class="lg:w-2/3">
@@ -72,6 +79,47 @@
                 </div>
             </div>
         </div>
+
+        <section aria-labelledby="galeria-dave" class="mt-16">
+            <h2 id="galeria-dave" class="font-display text-3xl text-nv-yellow mb-6">Galeria — Dave Grohl</h2>
+            <div class="torn-rule mb-8 max-w-xs"></div>
+            <div class="gallery grid grid-cols-2 gap-6 md:grid-cols-4">
+                <figure class="flex flex-col">
+                    <a href="/img/dave/01.jpg" class="aspect-square overflow-hidden border border-nv-yellow/30 bg-nv-gray transition hover:border-nv-yellow focus:outline-none focus:ring-2 focus:ring-nv-yellow">
+                        <img src="/img/dave/01.jpg" width="1128" height="1200" alt="Dave Grohl — zdjęcie 1" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0">
+                    </a>
+                    <figcaption><p class="mt-2 text-xs leading-snug text-gray-500">Fot. Craig Carper / <a href="https://commons.wikimedia.org/wiki/File:Dave-Grohl_drums.jpg" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer license" class="underline transition hover:text-nv-yellow">CC BY 2.0</a></p></figcaption>
+                </figure>
+                <figure class="flex flex-col">
+                    <a href="/img/dave/02.jpg" class="aspect-square overflow-hidden border border-nv-yellow/30 bg-nv-gray transition hover:border-nv-yellow focus:outline-none focus:ring-2 focus:ring-nv-yellow">
+                        <img src="/img/dave/02.jpg" width="1200" height="960" alt="Dave Grohl — zdjęcie 2" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0">
+                    </a>
+                    <figcaption><p class="mt-2 text-xs leading-snug text-gray-500">Fot. Roger Woolman / <a href="https://commons.wikimedia.org/wiki/File:Dave_Grohl_(55208432).jpeg" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener noreferrer license" class="underline transition hover:text-nv-yellow">CC BY 3.0</a></p></figcaption>
+                </figure>
+                <figure class="flex flex-col">
+                    <a href="/img/dave/03.jpg" class="aspect-square overflow-hidden border border-nv-yellow/30 bg-nv-gray transition hover:border-nv-yellow focus:outline-none focus:ring-2 focus:ring-nv-yellow">
+                        <img src="/img/dave/03.jpg" width="900" height="1200" alt="Dave Grohl — zdjęcie 3" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0">
+                    </a>
+                    <figcaption><p class="mt-2 text-xs leading-snug text-gray-500">Fot. Lindsay from Pittsburgh / <a href="https://commons.wikimedia.org/wiki/File:Dave_Grohl_-_july_2008.jpg" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer license" class="underline transition hover:text-nv-yellow">CC BY 2.0</a></p></figcaption>
+                </figure>
+                <figure class="flex flex-col">
+                    <a href="/img/dave/04.jpg" class="aspect-square overflow-hidden border border-nv-yellow/30 bg-nv-gray transition hover:border-nv-yellow focus:outline-none focus:ring-2 focus:ring-nv-yellow">
+                        <img src="/img/dave/04.jpg" width="1200" height="900" alt="Dave Grohl — zdjęcie 4" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0">
+                    </a>
+                    <figcaption><p class="mt-2 text-xs leading-snug text-gray-500">Fot. Jeramey Jannene from Milwaukee, WI, United States of America / <a href="https://commons.wikimedia.org/wiki/File:Dave_Grohl_on_Stage_(11670141).jpg" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer license" class="underline transition hover:text-nv-yellow">CC BY 2.0</a></p></figcaption>
+                </figure>
+                <figure class="flex flex-col">
+                    <a href="/img/dave/05.jpg" class="aspect-square overflow-hidden border border-nv-yellow/30 bg-nv-gray transition hover:border-nv-yellow focus:outline-none focus:ring-2 focus:ring-nv-yellow">
+                        <img src="/img/dave/05.jpg" width="881" height="1192" alt="Dave Grohl — zdjęcie 5" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0">
+                    </a>
+                    <figcaption><p class="mt-2 text-xs leading-snug text-gray-500">Fot. Fraser Reid / <a href="https://commons.wikimedia.org/wiki/File:Dave_Grohl_in_Iceland_2005.jpg" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener noreferrer license" class="underline transition hover:text-nv-yellow">CC BY 2.0</a></p></figcaption>
+                </figure>
+            </div>
+            <p class="mt-6 text-sm text-gray-500">
+                Zdjęcia pochodzą z Wikimedia Commons i są udostępnione na wolnych licencjach.
+                Autor i licencja są podane pod każdym zdjęciem.
+            </p>
+        </section>
 
     </main>
 
@@ -86,6 +134,15 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (document.querySelectorAll('.gallery a').length > 0 && window.SimpleLightbox) {
+                new SimpleLightbox('.gallery a');
+            }
+        });
+    </script>
 
 </body>
 </html>

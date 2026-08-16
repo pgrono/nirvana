@@ -20,7 +20,7 @@ Statyczna strona w HTML, stylowana Tailwind CSS, publikowana z GitHuba w Cloudfl
 | Dyskografia + Bleach, Nevermind, In Utero, MTV Unplugged | gotowe |
 | Ciekawostki | gotowe |
 | Linki i źródła | gotowe |
-| Galerie / zdjęcia | do ustalenia (skąd brać materiały) |
+| Galerie / zdjęcia | gotowe — 23 zdjęcia z Wikimedia Commons z podpisami licencji |
 
 ## Technologie
 
@@ -41,5 +41,7 @@ npm run watch   # tryb deweloperski
 
 Część materiałów opracowano na podstawie archiwalnego serwisu **Total Nirvana!** Marcina Harasia (2004), dostępnego w Internet Archive:
 <https://web.archive.org/web/20041206095953/http://www.tn.px.pl/>
+
+Zdjęcia pochodzą z **Wikimedia Commons** (wolne licencje i domena publiczna). Autor, licencja i odnośnik do strony pliku są podane pod każdą fotografią. Materiały prasowe i zdjęcia o nieustalonym statusie prawnym nie są publikowane.
 
 Teksty na stronie pisane są od zera — serwis źródłowy służy jako źródło faktów i inspiracja układu działów, nie jako materiał do przeklejania. Teksty utworów, tłumaczenia i tabulatury nie są publikowane.

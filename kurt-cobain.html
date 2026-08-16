@@ -7,6 +7,7 @@
     <title>Kurt Cobain - Nirvana</title>
     <meta name="description" content="Kurt Cobain, wokalista, gitarzysta i autor piosenek Nirvany: droga z Aberdeen, lata sławy, choroba i uzależnienie oraz kwiecień 1994 roku.">
     <link href="/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="512x512" href="/img/favicon.png">
     <link rel="preload" href="/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/anton-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -36,34 +37,40 @@
 
         <div class="flex flex-col gap-10 lg:flex-row">
             <div class="lg:w-1/3">
-                <div class="border border-nv-yellow/30 bg-nv-gray p-6 lg:sticky lg:top-28">
-                    <h2 class="font-display text-xl text-nv-yellow mb-4">Metryczka</h2>
-                    <dl class="space-y-3">
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Urodzony</dt>
-                            <dd class="text-lg text-gray-200 mt-1">20 lutego 1967, Aberdeen, Waszyngton</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Zmarł</dt>
-                            <dd class="text-lg text-gray-200 mt-1">kwiecień 1994, Seattle</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">W zespole</dt>
-                            <dd class="text-lg text-gray-200 mt-1">1987–1994</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Instrumenty</dt>
-                            <dd class="text-lg text-gray-200 mt-1">Gitara, śpiew</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Gitary</dt>
-                            <dd class="text-lg text-gray-200 mt-1">Fender Jaguar, Mustang, Jag-Stang</dd>
-                        </div>
-                        <div class="border-b border-white/10 pb-3">
-                            <dt class="text-xs uppercase tracking-widest text-gray-500">Wcześniej</dt>
-                            <dd class="text-lg text-gray-200 mt-1">Fecal Matter</dd>
-                        </div>
-                    </dl>
+                <div class="lg:sticky lg:top-28">
+                    <div class="border-4 border-nv-yellow p-1">
+                        <img src="/img/sklad/kurt-cobain.jpg" width="673" height="900" alt="Kurt Cobain" fetchpriority="high" class="w-full grayscale">
+                    </div>
+                    <p class="mt-2 text-xs leading-snug text-gray-500">Fot. Embassy of the United States, Bern / <a href="https://commons.wikimedia.org/wiki/File:Kurtcobain.png" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, domena publiczna</p>
+                    <div class="mt-6 border border-nv-yellow/30 bg-nv-gray p-6">
+                        <h2 class="font-display text-xl text-nv-yellow mb-4">Metryczka</h2>
+                        <dl class="space-y-3">
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Urodzony</dt>
+                                <dd class="text-lg text-gray-200 mt-1">20 lutego 1967, Aberdeen, Waszyngton</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Zmarł</dt>
+                                <dd class="text-lg text-gray-200 mt-1">kwiecień 1994, Seattle</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">W zespole</dt>
+                                <dd class="text-lg text-gray-200 mt-1">1987–1994</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Instrumenty</dt>
+                                <dd class="text-lg text-gray-200 mt-1">Gitara, śpiew</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Gitary</dt>
+                                <dd class="text-lg text-gray-200 mt-1">Fender Jaguar, Mustang, Jag-Stang</dd>
+                            </div>
+                            <div class="border-b border-white/10 pb-3">
+                                <dt class="text-xs uppercase tracking-widest text-gray-500">Wcześniej</dt>
+                                <dd class="text-lg text-gray-200 mt-1">Fecal Matter</dd>
+                            </div>
+                        </dl>
+                    </div>
                 </div>
             </div>
             <div class="lg:w-2/3">
@@ -79,6 +86,35 @@
             </div>
         </div>
 
+        <section aria-labelledby="galeria-kurt" class="mt-16">
+            <h2 id="galeria-kurt" class="font-display text-3xl text-nv-yellow mb-6">Galeria — Kurt Cobain</h2>
+            <div class="torn-rule mb-8 max-w-xs"></div>
+            <div class="gallery grid grid-cols-2 gap-6 md:grid-cols-3">
+                <figure class="flex flex-col">
+                    <a href="/img/kurt/01.jpg" class="aspect-square overflow-hidden border border-nv-yellow/30 bg-nv-gray transition hover:border-nv-yellow focus:outline-none focus:ring-2 focus:ring-nv-yellow">
+                        <img src="/img/kurt/01.jpg" width="900" height="1200" alt="Kurt Cobain — zdjęcie 1" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0">
+                    </a>
+                    <figcaption><p class="mt-2 text-xs leading-snug text-gray-500">Fot. Alice Wheeler / <a href="https://commons.wikimedia.org/wiki/File:Kurt_Cobain_on_Love_Buzz_Big_Cheese_front_cover_(cropped).jpg" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, domena publiczna</p></figcaption>
+                </figure>
+                <figure class="flex flex-col">
+                    <a href="/img/kurt/02.jpg" class="aspect-square overflow-hidden border border-nv-yellow/30 bg-nv-gray transition hover:border-nv-yellow focus:outline-none focus:ring-2 focus:ring-nv-yellow">
+                        <img src="/img/kurt/02.jpg" width="959" height="756" alt="Kurt Cobain — zdjęcie 2" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0">
+                    </a>
+                    <figcaption><p class="mt-2 text-xs leading-snug text-gray-500">Fot. Montesano High School / <a href="https://commons.wikimedia.org/wiki/File:Cobain_1981.png" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, domena publiczna</p></figcaption>
+                </figure>
+                <figure class="flex flex-col">
+                    <a href="/img/kurt/03.jpg" class="aspect-square overflow-hidden border border-nv-yellow/30 bg-nv-gray transition hover:border-nv-yellow focus:outline-none focus:ring-2 focus:ring-nv-yellow">
+                        <img src="/img/kurt/03.jpg" width="1200" height="909" alt="Kurt Cobain — zdjęcie 3" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0">
+                    </a>
+                    <figcaption><p class="mt-2 text-xs leading-snug text-gray-500">Fot. autor nieznany / <a href="https://commons.wikimedia.org/wiki/File:Kurt_cobain.jpg" target="_blank" rel="noopener noreferrer" class="underline transition hover:text-nv-yellow">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/3.0" target="_blank" rel="noopener noreferrer license" class="underline transition hover:text-nv-yellow">CC BY 3.0</a></p></figcaption>
+                </figure>
+            </div>
+            <p class="mt-6 text-sm text-gray-500">
+                Zdjęcia pochodzą z Wikimedia Commons i są udostępnione na wolnych licencjach.
+                Autor i licencja są podane pod każdym zdjęciem.
+            </p>
+        </section>
+
     </main>
 
     <footer class="bg-black border-t-2 border-nv-yellow p-8 mt-12">
@@ -92,6 +128,15 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (document.querySelectorAll('.gallery a').length > 0 && window.SimpleLightbox) {
+                new SimpleLightbox('.gallery a');
+            }
+        });
+    </script>
 
 </body>
 </html>
