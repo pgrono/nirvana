@@ -70,4 +70,37 @@
     height: 3px;
     background: repeating-linear-gradient(90deg, #f5d020 0 22px, transparent 22px 30px, #f5d020 30px 44px, transparent 44px 48px);
   }
+
+  /* Menu mobilne — panel wysuwany z prawej krawędzi ekranu. */
+  .nav-drawer {
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform 300ms ease, visibility 0s linear 300ms;
+  }
+  .nav-drawer.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 300ms ease, visibility 0s;
+  }
+  .nav-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease, visibility 0s linear 300ms;
+  }
+  .nav-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 0s;
+  }
+  /* Blokada przewijania tła przy otwartym panelu. */
+  .nav-lock {
+    overflow: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nav-drawer,
+    .nav-overlay {
+      transition: none;
+    }
+  }
 }
